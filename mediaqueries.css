@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 678px) {
+    header {
+        display: none;
+    }
+    article {
+        display: none;
+    }
+    span#icone {
+        display: block;
+        text-align: center;
+        padding: 35px;
+        background-color: darkred;
+        color: white;
+        font-size: 2em;
+        cursor: pointer;
+        border-bottom: 2px solid black;
+    }
+    div#opcoes > a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        font-size: 1.3em;
+        background-color: rgb(116, 0, 0);
+        border-bottom: 1px solid black;
+    }
+    div#opcoes > a:hover {
+        background-color: rgb(163, 39, 39);
+        transition: 0.3s;
+    }
+}

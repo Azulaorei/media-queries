@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <title>Cadastro</title>
+</head>
+<body>
+<section>
+    <form action="formulario.php" autocomplete="on">
+        <a href="index.html" id="voltar"><< Voltar</a>
+        <h1>Cadastro</h1>
+        <p><label for="inome">Nome: </label> 
+            <input type="text" name="nome" id="inome" required minlength="5" maxlength="20" placeholder="João Lucas" autocomplete="username"> 
+        </p>
+        <p>
+            <label for="isobrenome">Sobrenome: </label> 
+            <input type="text" name="sobrenome" id="isobrenome" required minlength="5" maxlength="12" placeholder="Silva" autocomplete="username"> 
+        </p>
+        <p>
+            <label for="iidade">Idade: </label> 
+            <input type="number" name="idade" id="iidade" required min="0" placeholder="32" size="2"> 
+        </p>
+        <p>
+            <label for="icpf">CPF: </label> 
+            <input type="number" name="cpf" id="icpf" required min="11111111111" max="99999999999" placeholder="562.198.078-63" step="1">
+        </p>
+        <p> 
+            <input type="reset" value="Limpar" class="botao"> 
+            <input type="submit" value="Enviar" id="enviar" class="botao">
+        </p>            
+    </form>
+</section>
+</body>
+</html>
